@@ -1,7 +1,7 @@
+import Dashboard from './Dashboard/Dashboard';
 import './Home.scss'
 
 function Home() {
-
     const toggleOverlay = (e: any) => {
         e.preventDefault();
         document.querySelector('.menu-overlay')?.classList.toggle("active");
@@ -25,12 +25,12 @@ function Home() {
                 </ul>
             </div>
             <div className="main">
-                <h1>Home Page</h1>
+                <Dashboard/>
             </div>
             <div className="footer">
                 <span>Copyright 2023 by AA Dev. All Rights Reserved.</span>
             </div>
-            <div className="menu-overlay active" onClick={toggleOverlay}>
+            <div className="menu-overlay" onClick={toggleOverlay}>
                 <div className="menu" onClick={(e) => { e.stopPropagation() }}>
                     <div className="menu-profile">
                         <img src="https://via.placeholder.com/150" alt="Picture random" className="profile" />

@@ -68,3 +68,37 @@ body {
 //     background-color: #f9f9f9;
 //   }
 // }
+
+div.tooltip {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid white;
+  color: white;
+  opacity: 1;
+  
+  pointer-events: none;
+
+  position: absolute;
+  transform: translate(30%, -150%);
+  transition: all .1s ease;
+
+  line-height: 1rem;
+  font-size: .8rem;
+
+  .title {
+    margin-right: .5rem;
+    font-weight: 700;
+  }
+
+
+  
+  &::before {
+    content: "";
+    display: block;
+    // background-color: yellow;
+    width: 36.5px;
+    height: 30px;
+    border-bottom: 1px solid white;
+    transform: translateX(-62px) translateY(-5px);
+    rotate: -45deg;
+  }
+}

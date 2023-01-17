@@ -104,6 +104,8 @@
         grid-row: r-mid-s/r-mid-e;
         grid-column: c-mid/c-end;
         padding-inline: 1rem;
+
+        overflow: scroll;
     }
 
     .footer {
