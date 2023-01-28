@@ -5,11 +5,21 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import Home from './Pages/Home'
 import './index.scss'
+import AddUser from './Pages/Users/Add/AddUser'
+import UserProfile from './Pages/Users/Profile/UserProfile'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>
+  }, 
+  {
+    path: "/adduser",
+    element: <AddUser/>
+  },
+  {
+    path: "/profile",
+    element: <UserProfile/>
   }
 ]);
 
